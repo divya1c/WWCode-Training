@@ -1,0 +1,6 @@
+FROM ubuntu
+RUN mkdir /code
+WORKDIR /code
+ADD script.sh /code/
+RUN chmod +x script.sh
+ENTRYPOINT ["sh", "./script.sh"]
